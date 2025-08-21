@@ -56,7 +56,7 @@ Fach: Programmieren in C/C++\par}
 
 \vspace{1cm}
 
-\href{https://github.com/lennartjaworek/TinyHexa}{https://github.com/lennartjaworek/TinyHexa}
+\href{https://github.com/LeonS1337/TinyHexaIU}{https://github.com/LeonS1337/TinyHexaIU}
 
 \vfill
 \end{center}
