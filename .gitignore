@@ -69,7 +69,6 @@ CMakeUserPresets.json
 
 #Für Dokumentation
 *.png
-*.pdf
 *.svg
 
 ################################Ausnahmen#############################################
