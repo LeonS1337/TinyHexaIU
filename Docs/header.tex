@@ -1,0 +1,32 @@
+\usepackage{fontspec}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{ragged2e}
+
+% Hauptschrift: Arial mit Fallbacks für Symbole wie ↔ ⇄
+\setmainfont{Arial}[
+  Renderer=Harfbuzz,
+  FallbackFamilies = {FiraCode Nerd Font}
+]
+
+\AtBeginDocument{
+  \onehalfspacing
+  \setlength{\parskip}{6pt}
+  \setlength{\parindent}{0pt}
+  \renewcommand{\footnotesize}{\fontsize{10}{12}\selectfont}
+}
+
+% Standard-Platzierung aller Abbildungen auf [H] (ohne figure-Umgebung zu patchen)
+\makeatletter
+\def\fps@figure{H}
+\makeatother
+
+% Überschriften: exakt 12pt, „Blocksatz“
+\titleformat{\section}
+  {\bfseries\fontsize{12}{14}\selectfont\justifying} % 12/14 pt, fett
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\bfseries\fontsize{11}{13}\selectfont\justifying}
+  {\thesubsection}{1em}{}
+% (Falls du für tiefere Ebenen auch 12 pt willst, analog \subsubsection definieren.)
